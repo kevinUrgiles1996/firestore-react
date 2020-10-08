@@ -1,0 +1,56 @@
+.card {
+  background: #edc988;
+  color: #132743;
+  padding: 20px;
+  padding-left: 50px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgba(black, 0.12);
+  position: relative;
+  overflow: hidden;
+  min-height: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin: 0;
+  max-width: 80%;
+}
+
+.card cite {
+  font-size: 16px;
+  margin-top: 10px;
+  display: block;
+  font-weight: 200;
+  opacity: 0.8;
+}
+
+.card-body {
+  width: 600px;
+}
+
+
+button {
+  display: block;
+  width: 100px;
+  margin: 5px;
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  transform: scale(0.98);
+}
+
+.edit-button {
+  background-color: blue;
+}
+
+.delete-button {
+  background-color: red;
+}
