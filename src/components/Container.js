@@ -9,6 +9,7 @@ export const Container = () => {
   const { docs: quotes } = useData('quotes');
 
   const [isVisible, setIsVisible] = useState(false);
+
   const showModal = () => setIsVisible(true);
   const hideModal = () => setIsVisible(false);
 

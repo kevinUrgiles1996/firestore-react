@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ReactModal from 'react-modal';
+
 import { projectFirestore as db } from '../firebase/config';
 
 const customStyles = {
@@ -68,8 +69,8 @@ export const Modal = ({ quote, mode, isVisible, hideModal }) => {
   }
 
   return (
-    <ReactModal isOpen={isOpen} style={customStyles} >
-      <form className='edit-modal' onSubmit={handleSubmit}>
+    <ReactModal isOpen={isOpen} style={customStyles}>
+      <form className='modal' onSubmit={handleSubmit}>
         <button className='close-button' onClick={closeModal} >X</button>
         <input type='text' value={newAuthor} onChange={handleAuthorChange} placeholder='Author' />
         <textarea type='text' value={newCite} onChange={handleCiteChange} placeholder='Cite' />

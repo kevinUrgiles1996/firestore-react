@@ -9,6 +9,9 @@ export const Quote = ({ quote }) => {
 
   const [isVisible, setIsVisible] = useState(false);
 
+  const showModal = () => setIsVisible(true);
+  const hideModal = () => setIsVisible(false);
+
   const deleteQuote = async () => {
     try {
       await db.collection('quotes').doc(id).delete();
@@ -16,9 +19,6 @@ export const Quote = ({ quote }) => {
       console.error(error);
     }
   }
-
-  const showModal = () => setIsVisible(true);
-  const hideModal = () => setIsVisible(false);
 
   return (
     <>
